@@ -1,0 +1,92 @@
+.registration-screen {
+    background-color: #fbe2c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+  
+    .form-container {
+      width: 100%;
+      max-width: 400px; /* Set max-width to control the width of the form */
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .registration-header {
+      margin-bottom: 20px;
+  
+      img {
+        width: 220x;
+        height: 200px;
+        margin-top: 20;
+        margin-bottom: 20;
+      }
+  
+      h2 {
+        font-size: 22px;
+        color: #4b4b4b;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    }
+  
+    ion-item {
+      --background: transparent;
+      --inner-padding-end: 0;
+      --inner-padding-start: 0;
+      --padding-start: 0;
+      --padding-end: 0;
+      margin-bottom: 10px;
+    }
+  
+    .rounded-input {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+  
+      ion-input {
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        --placeholder-color: #888;
+        --color: #333;
+        width: 300px;
+        margin-left: 50px;
+        margin-right: 50px;
+       
+        max-width: 350px; /* Limit input width */
+      }
+    }
+  
+    .register-button {
+      margin-top: 20px;
+      --background: linear-gradient(to right, #ff7e5f, #feb47b);
+      height: 50px;
+      border-radius: 25px;
+      font-size: 18px;
+      width: 100%;
+      max-width: 250px; /* Limit button width */
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+  
+    
+    .login-link {
+      margin-top: 15px;
+      p {
+        font-size: 14px;
+        color: #666;
+  
+        a {
+          color: #ff7e5f;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  

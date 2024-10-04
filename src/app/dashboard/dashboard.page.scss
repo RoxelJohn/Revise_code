@@ -1,0 +1,88 @@
+.dashboard-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes the content to the bottom */
+    align-items: center; /* Centers the content horizontally */
+    height: 100vh; /* Full screen height to ensure content is pushed to the bottom */
+    padding: 20px;
+  }
+  
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+    ion-avatar {
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+  
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+  
+    ion-button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
+  .tasks-list {
+    margin-top: 20px; /* Space between the header and the tasks */
+    width: 100%;
+    ion-item {
+      margin-bottom: 10px; /* Space between tasks */
+    }
+  }
+  
+  ion-card-content {
+    width: 100%;
+  }
+  
+  .completed {
+    text-decoration: line-through; /* Add a strikethrough effect */
+    color: gray; /* Change text color to gray */
+  }
+  
+  .ion-header{
+    color: #F4C27F;
+  }
+
+  ion-button {
+    --padding-start: 12px;  /* Customize to adjust spacing between icon and text */
+    --padding-end: 12px;
+  }
+  
+  ion-icon {
+    font-size: 20px; /* Adjust the icon size */
+    margin: 0;       /* Remove default margin */
+    padding: 0;      /* Ensure no padding around the icon */
+  }
+  
+  ion-button:hover ion-icon,
+  ion-button:active ion-icon {
+    transform: none;  /* Prevent icon from moving when button is clicked */
+  }
+  
+  .completed {
+    width: 120px; /* Set desired width */
+    height: 120px; /* Set desired height */
+    margin-bottom: 15px; /* Space between the avatar and the text */
+    border-radius: 50%;
+  }
+
+  .logOut{
+    --background: linear-gradient(to right, #ff7e5f, #feb47b);
+  }
+
+
+  

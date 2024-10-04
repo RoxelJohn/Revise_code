@@ -1,0 +1,77 @@
+.signin-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4C27F; /* Global background color */
+  height: 100vh; /* Ensure it covers the whole viewport */
+  padding: 20px;
+
+  .signin-header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+      width: 200px; /* Adjust based on your design */
+      height: auto;
+    }
+  }
+
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+
+  ion-item {
+    --background: transparent;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px; /* Control the max width of input fields */
+  }
+
+  .rounded-input ion-input {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    --placeholder-color: #888;
+    --color: #333;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .signin-button {
+    width: 100%;
+    max-width: 250px;
+    --background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+
+  .signup-link {
+    margin-top: 20px;
+  }
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: vertically center */
+  margin-top: 20px; /* Optional: add space above */
+  text-align: center; /* Ensure text is centered */
+}
+

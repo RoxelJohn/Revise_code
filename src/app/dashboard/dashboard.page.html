@@ -1,0 +1,42 @@
+<ion-content class="dashboard-screen">
+
+  <div class="profile-header">
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <h3>{{fullname}}</h3>
+    <p>{{ email }}</p>
+    <ion-button expand="block" color="primary" (click)="logOut()">Log Out</ion-button>
+  </div>
+  
+  <ion-card class="tasks-container">
+    <ion-card-header *ngIf="tasks.length > 0">
+      <ion-card-title>Scheduled</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content *ngIf="tasks.length > 0">
+      <ion-list>
+        <ion-item *ngFor="let task of tasks; let i = index">
+          <ion-label>{{ task }}</ion-label>
+
+          <ion-button fill="outline" color="primary" slot="end" (click)="updateTaskPrompt(i)">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-button fill="outline" color="danger" slot="end" (click)="deleteTask(i)">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="light" (click)="presentAlert()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+
+

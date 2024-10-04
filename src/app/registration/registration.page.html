@@ -1,0 +1,29 @@
+<ion-content class="registration-screen">
+
+  <div class="registration-header">
+    <img src="/assets/image/Done.png" alt="Illustration">
+    <h2>Get things done with <br> TO-DUO</h2>
+  </div>
+
+  <ion-item lines="none" class="rounded-input">
+    <ion-input [(ngModel)]="fullname" placeholder="Enter your full name" type="text"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item lines="none" class="rounded-input">
+    <ion-input [(ngModel)]="email" placeholder="Enter your email" type="email"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item lines="none" class="rounded-input">
+    <ion-input [(ngModel)]="password" placeholder="Enter password" type="password"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item lines="none" class="rounded-input">
+    <ion-input [(ngModel)]="confirmPassword" placeholder="Confirm password" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" class="register-button" (click)="register()">Register</ion-button>
+
+  <div class="login-link">
+    <p>Already have an account? <a href="#" [routerLink]="['/login']">Sign In</a></p>
+  </div>
+</ion-content>

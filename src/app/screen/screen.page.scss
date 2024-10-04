@@ -1,0 +1,55 @@
+.welcome-screen {
+  background-color: #fef3e7; /* Soft orange background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .welcome-header {
+    text-align: center;
+
+    img {
+      
+      width: 200px; /* Adjust based on your design */
+      height: auto;
+
+    }
+  }
+
+  .welcome-text {
+    text-align: center;
+
+    h1 {
+      font-size: 1.8rem; /* Increased size */
+      font-weight: bold;
+      color: #444444;
+
+      .app-name {
+        font-size: 2rem; /* Increased size for emphasis */
+        color: #fa5a5a; /* Soft red color for app name */
+      }
+    }
+
+    .description {
+      font-size: 1rem; /* Increased font size for readability */
+      color: #666666; /* Lighter grey for description */
+      padding: 10px 0;
+    }
+  }
+
+  ion-button {
+    width: 300px;
+    max-width: 300px;
+    --background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50px
+
+    
+  }
+}
+
+
